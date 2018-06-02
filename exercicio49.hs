@@ -21,3 +21,15 @@
  myreverse' l = foldr f [] l
              where 
              	 f x y = y ++ [x]
+               
+ --49)d)
+
+ lreverse :: [a] -> [a] -> [a]
+ lreverse acc [] = acc
+ lreverse acc (x:xs) = lreverse (f acc x) xs
+ 			where f acc x = x:acc
+
+ lreverse' l = foldl (\acc x -> x:acc) [] l
+
+ lreverse'' l = foldl f [] l
+ 			where f acc x = x:acc
