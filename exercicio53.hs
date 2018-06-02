@@ -1,5 +1,3 @@
---53
-
  shift :: [a] -> [a]
  shift [] = []
  shift (x:xs) = xs ++ [x]
