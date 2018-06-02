@@ -1,4 +1,4 @@
---49)a)
+-- a)
 
  (+++) :: [a] -> [a] -> [a]
  (+++) [] l = l
@@ -9,7 +9,7 @@
  (++++) l1 l2 = foldr f l2 l1         -- foldr (:) l2 l1
              where f x y = x : y
 
---49)c)
+-- c)
 
  myreverse :: [a] -> [a]
  myreverse [] = []
@@ -22,7 +22,7 @@
              where 
              	 f x y = y ++ [x]
                
- --49)d)
+ -- d)
 
  lreverse :: [a] -> [a] -> [a]
  lreverse acc [] = acc
