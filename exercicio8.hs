@@ -1,3 +1,4 @@
+ -- b)
  orderTriple :: Ord a => (a,a,a) -> (a,a,a)
  orderTriple (x,y,z) | x >= y && y >= z = (z,y,x)
                      | x >= z && z >= y = (y,z,x)
