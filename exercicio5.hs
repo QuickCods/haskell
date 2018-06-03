@@ -8,4 +8,4 @@
 
  myinit :: [a] -> [a]
  --myinit l = take (length l - 1) l
- myinit = reverse (tail (reverse 1))
+ myinit = reverse (tail (reverse l))
