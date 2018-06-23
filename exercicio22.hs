@@ -1,1 +1,1 @@
- sumsq = [x*x | x < [1..100]]
+ sumsq = sum [x*x | x < [1..100]]
